@@ -12,25 +12,34 @@
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
 
+  fonts.fontconfig.enable = true;
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     htop
     cmatrix
+    tree
 
-    rofi
     flameshot
+    brightnessctl
 
     alacritty
     feh
+    font-manager
+    lxappearance
     discord
     spotify
     thunderbird
     slack
 
     nixfmt
+
+    (nerdfonts.override { fonts = [ "Hack" ]; })
+    noto-fonts-emoji
+    papirus-icon-theme
   ];
 
-  imports = [ ./git ./bspwm ./sxhkd ];
+  imports = [ ./git ./bspwm ./sxhkd ./rofi ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

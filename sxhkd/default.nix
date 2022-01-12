@@ -54,7 +54,7 @@
       "super + d" = "rofi -show drun -modi drun -show-icons";
       "super + F12" = "rofi -show emoji -modi emoji";
       "super + x" =
-        "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu";
+        "rofi -show power-menu -modi power-menu:rofi-power-menu";
 
       # Toggle status bar
       "super + shift + b" = "polybar-msg cmd toggle";
