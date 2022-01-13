@@ -48,7 +48,7 @@
     papirus-icon-theme
   ];
 
-  imports = [ ./python ./git ./bspwm ./sxhkd ./polybar ./rofi ];
+  imports = [ ./python ./git ./bspwm ./sxhkd ./dunst ./polybar ./rofi ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
