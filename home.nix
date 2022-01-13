@@ -49,6 +49,7 @@
   ];
 
   imports = [ ./python ./git ./bspwm ./sxhkd ./dunst ./polybar ./rofi ];
+  services.network-manager-applet.enable = true;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
