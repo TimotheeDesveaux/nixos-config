@@ -29,7 +29,6 @@
     redshift
 
     # Apps
-    alacritty
     feh
     font-manager
     lxappearance
@@ -48,7 +47,7 @@
     papirus-icon-theme
   ];
 
-  imports = [ ./python ./git ./bspwm ./sxhkd ./dunst ./polybar ./rofi ];
+  imports = [ ./python ./git ./bspwm ./sxhkd ./dunst ./polybar ./alacritty ./rofi ./picom ];
   services.network-manager-applet.enable = true;
 
   # This value determines the Home Manager release that your
