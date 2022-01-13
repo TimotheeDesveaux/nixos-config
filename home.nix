@@ -16,13 +16,19 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    # Shell
     htop
     cmatrix
     tree
+    killall
 
+    # Utility
     flameshot
     brightnessctl
+    playerctl
+    redshift
 
+    # Apps
     alacritty
     feh
     font-manager
@@ -32,14 +38,17 @@
     thunderbird
     slack
 
+    # Dev
     nixfmt
 
+    # Fonts/Theme
     (nerdfonts.override { fonts = [ "Hack" ]; })
+    iosevka
     noto-fonts-emoji
     papirus-icon-theme
   ];
 
-  imports = [ ./git ./bspwm ./sxhkd ./rofi ];
+  imports = [ ./python ./git ./bspwm ./sxhkd ./polybar ./rofi ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
