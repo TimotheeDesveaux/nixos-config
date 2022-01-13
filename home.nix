@@ -20,25 +20,38 @@
     htop
     cmatrix
     tree
-    killall
+    ripgrep
 
     # Utility
     flameshot
     brightnessctl
     playerctl
     redshift
+    xclip
+
+    pandoc
+    texlive.combined.scheme-full
 
     # Apps
-    feh
-    font-manager
-    lxappearance
     discord
     spotify
     thunderbird
     slack
+    feh
+    zathura
+    font-manager
+    lxappearance
 
     # Dev
+    gcc
+    gnumake
+    neovim
     nixfmt
+    stylua
+    rustfmt
+    clang-tools
+    sumneko-lua-language-server
+    rust-analyzer
 
     # Fonts/Theme
     (nerdfonts.override { fonts = [ "Hack" ]; })
