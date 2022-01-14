@@ -60,7 +60,18 @@
     papirus-icon-theme
   ];
 
-  imports = [ ./python ./git ./bspwm ./sxhkd ./dunst ./polybar ./alacritty ./rofi ./picom ];
+  imports = [
+    ./python
+    ./git
+    ./bspwm
+    ./sxhkd
+    ./dunst
+    ./polybar
+    ./alacritty
+    ./rofi
+    ./picom
+    ./fish
+  ];
   services.network-manager-applet.enable = true;
 
   # This value determines the Home Manager release that your

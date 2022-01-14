@@ -1,3 +1,5 @@
+{ config, lib, pkgs, ... }:
+
 {
   programs.alacritty = {
     enable = true;
@@ -92,9 +94,7 @@
 
       live_config_reload = true;
 
-      # shell = {
-      #   program: /usr/bin/fish
-      # };
+      shell.program = "${pkgs.fish}/bin/fish";
 
       working_directory = "None";
 
