@@ -71,6 +71,7 @@
     ./rofi
     ./picom
     ./fish
+    ./starship
   ];
   services.network-manager-applet.enable = true;
 
