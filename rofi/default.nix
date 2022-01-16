@@ -5,7 +5,7 @@
     enable = true;
     terminal = "alacritty";
     font = "Hack Nerd Font 10";
-    plugins = [ pkgs.rofi-power-menu pkgs.rofi-emoji ];
+    plugins = [ pkgs.rofi-emoji ];
     extraConfig = {
       icon-theme = "Papirus";
       show-icons = false;
@@ -16,4 +16,6 @@
     };
     theme = ./tokyonight.rasi;
   };
+
+  home.packages = [ pkgs.rofi-power-menu ];
 }
