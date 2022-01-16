@@ -67,12 +67,14 @@
     ./sxhkd
     ./dunst
     ./polybar
-    ./alacritty
     ./rofi
+    ./screen-locker
+    ./alacritty
     ./picom
     ./fish
     ./starship
   ];
+
   services.network-manager-applet.enable = true;
 
   # This value determines the Home Manager release that your

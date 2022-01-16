@@ -61,9 +61,6 @@
 
       # Invoke screenshot utility
       "Print" = "flameshot gui";
-
-      # Lock screen
-      "super + shift + x" = "~/.config/bspwm/lock.sh";
     };
   };
 }
