@@ -16,7 +16,6 @@
     '';
   };
 
-
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -57,6 +56,7 @@
   users.users.stolen = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" ];
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
@@ -65,6 +65,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [ vim wget git firefox ];
+
+  services.printing.enable = true;
+  services.printing.drivers = [ pkgs.gutenprint ];
+
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "stolen" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

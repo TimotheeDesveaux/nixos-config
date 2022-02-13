@@ -8,6 +8,10 @@
   # paths it should manage.
   home.username = "stolen";
   home.homeDirectory = "/home/stolen";
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    _JAVA_AWT_WM_NONREPARENTING = 1;
+  };
 
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
@@ -21,6 +25,7 @@
     cmatrix
     tree
     ripgrep
+    neofetch
 
     # Utility
     flameshot
@@ -28,6 +33,7 @@
     playerctl
     redshift
     xclip
+    unzip
 
     pandoc
     texlive.combined.scheme-full
@@ -52,6 +58,9 @@
     clang-tools
     sumneko-lua-language-server
     rust-analyzer
+    texlab
+    bear
+    ccls
 
     # Fonts/Theme
     (nerdfonts.override { fonts = [ "Hack" ]; })
@@ -60,20 +69,7 @@
     papirus-icon-theme
   ];
 
-  imports = [
-    ./python
-    ./git
-    ./bspwm
-    ./sxhkd
-    ./dunst
-    ./polybar
-    ./rofi
-    ./screen-locker
-    ./alacritty
-    ./picom
-    ./fish
-    ./starship
-  ];
+  imports = [ ./programs ];
 
   services.network-manager-applet.enable = true;
 

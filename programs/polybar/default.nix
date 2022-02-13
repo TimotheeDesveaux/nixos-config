@@ -12,6 +12,7 @@
     ".config/polybar/colors.ini".source = ./colors.ini;
     ".config/polybar/modules.ini".source = ./modules.ini;
     ".config/polybar/fonts.ini".source = ./fonts.ini;
+    ".config/polybar/fonts-big.ini".source = ./fonts-big.ini;
     ".config/polybar/scripts" = {
       source = ./scripts;
       recursive = true;
