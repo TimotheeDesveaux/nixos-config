@@ -55,7 +55,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.stolen = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "video" ];
+    extraGroups = [ "wheel" "networkmanager" "video" "vboxusers" "docker" ];
     shell = pkgs.fish;
   };
 
@@ -70,7 +70,7 @@
   services.printing.drivers = [ pkgs.gutenprint ];
 
   virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "stolen" ];
+  virtualisation.docker.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -100,4 +100,3 @@
   system.stateVersion = "21.11"; # Did you read the comment?
 
 }
-
