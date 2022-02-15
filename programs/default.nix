@@ -2,7 +2,7 @@
   imports = [
     ./alacritty.nix
     ./bspwm.nix
-    ./dunst
+    ./dunst.nix
     ./fish.nix
     ./git.nix
     ./picom.nix
