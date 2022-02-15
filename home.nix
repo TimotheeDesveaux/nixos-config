@@ -47,6 +47,7 @@
     zathura
     font-manager
     lxappearance
+    teams
 
     # Dev
     gcc
@@ -60,7 +61,6 @@
     rust-analyzer
     texlab
     bear
-    ccls
 
     # Fonts/Theme
     (nerdfonts.override { fonts = [ "Hack" ]; })
