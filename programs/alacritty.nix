@@ -81,7 +81,7 @@
         ];
       };
 
-      background_opacity = 1;
+      window.opacity = 1;
 
       selection = { save_to_clipboard = true; };
 
