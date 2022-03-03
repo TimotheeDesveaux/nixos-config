@@ -5,7 +5,8 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ # Include the results of the hardware scan.
+  imports = [
+    # Include the results of the hardware scan.
     ./hardware-configuration.nix
   ];
 
@@ -39,10 +40,12 @@
   services.xserver.windowManager.bspwm.enable = true;
 
   # Configure keymap in X11
-  services.xserver.layout = "us";
-  services.xserver.xkbOptions = "caps:swapescape";
-  services.xserver.autoRepeatDelay = 220;
-  services.xserver.autoRepeatInterval = 35;
+  services.xserver = {
+    layout = "us";
+    xkbOptions = "caps:swapescape";
+    autoRepeatDelay = 220;
+    autoRepeatInterval = 35;
+  };
 
   # Enable sound.
   sound.enable = true;

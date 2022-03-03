@@ -3,7 +3,7 @@
 with pkgs;
 let
   my-python-packages = python-packages: with python-packages; [
-     dbus-python
+    dbus-python
   ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
