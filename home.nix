@@ -22,7 +22,6 @@
   home.packages = with pkgs; [
     # Shell
     htop
-    cmatrix
     tree
     ripgrep
     neofetch
@@ -46,21 +45,19 @@
     feh
     zathura
     font-manager
-    lxappearance
     teams
 
     # Dev
     gcc
     gnumake
     neovim
-    nixfmt
+    nixpkgs-fmt
     stylua
     rustfmt
     clang-tools
     sumneko-lua-language-server
     rust-analyzer
     texlab
-    bear
 
     # Fonts/Theme
     (nerdfonts.override { fonts = [ "Hack" ]; })
