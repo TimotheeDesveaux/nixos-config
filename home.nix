@@ -46,6 +46,7 @@
     zathura
     font-manager
     teams
+    pavucontrol
 
     # Dev
     gcc
