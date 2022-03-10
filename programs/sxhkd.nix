@@ -55,14 +55,14 @@
       "super + F12" = "rofi -show emoji -modi emoji";
       "super + x" = "rofi -show power-menu -modi power-menu:rofi-power-menu";
 
-      # Toggle status bar
-      "super + shift + b" = "polybar-msg cmd toggle";
-
       # Invoke screenshot utility
       "Print" = "flameshot gui";
 
       # Dual scren
       "super + p" = "~/.scripts/monitor_layout.sh";
+
+      # Swap keyboard layout
+      "super + space" = "~/.scripts/swap_keyboard_layout.sh";
     };
   };
 }
