@@ -132,7 +132,7 @@ pkgs: colors:
     interval = 1;
     exec = "~/.config/polybar/scripts/spotify_status.py -f '{play_pause} {artist} - {song}' -p ',' -t 25";
     click-left = "${pkgs.dbus}/bin/dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause";
-    click-right = "${pkgs.bspwm}/bin/bspc desktop - -focus 10";
+    click-right = "${pkgs.bspwm}/bin/bspc desktop --focus 10";
 
     format = {
       text = "<label>";
