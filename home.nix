@@ -22,42 +22,46 @@
   home.packages = with pkgs; [
     # Shell
     htop
-    tree
-    ripgrep
     neofetch
+    ripgrep
+    tree
 
     # Utility
-    flameshot
     brightnessctl
+    flameshot
     playerctl
     redshift
-    xclip
     unzip
+    xclip
 
+    # Latex
     pandoc
     texlive.combined.scheme-full
 
     # Apps
     discord
-    spotify
-    thunderbird
-    slack
     feh
-    zathura
     font-manager
-    teams
     pavucontrol
+    slack
+    spotify
+    teams
+    thunderbird
+    zathura
 
     # Dev
+    bear
+    clang-tools
     gcc
     gnumake
     neovim
+
+    # Formatters and language servers
     nixpkgs-fmt
-    stylua
-    rustfmt
-    clang-tools
-    sumneko-lua-language-server
     rust-analyzer
+    rustfmt
+    stylua
+    sumneko-lua-language-server
     texlab
 
     # Fonts/Theme
