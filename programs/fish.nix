@@ -23,6 +23,9 @@
       ga = "git add";
       gc = "git commit";
       gp = "git push";
+
+      nd = "nix develop --command fish";
+      ns = "nix-shell --command fish";
     };
 
     shellAliases = {
