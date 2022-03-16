@@ -38,14 +38,16 @@
       "XF86AudioRaiseVolume" = "pactl set-sink-volume @DEFAULT_SINK@ +5%";
       "XF86AudioLowerVolume" = "pactl set-sink-volume @DEFAULT_SINK@ -5%";
       "XF86AudioMute" = "pactl set-sink-mute @DEFAULT_SINK@ toggle";
+
+      # Brightness
+      "XF86MonBrightnessDown" = "brightnessctl set 5%-";
+      "XF86MonBrightnessUp" = "brightnessctl set 5%+";
+
+      # Media
       "XF86AudioPlay" = "playerctl play-pause";
       "XF86AudioNext" = "playerctl next";
       "XF86AudioPrev" = "playerctl previous";
       "XF86AudioStop" = "playerctl stop";
-
-      # Brightness
-      "XF86MonBrightnessUp" = "brightnessctl set 5%+";
-      "XF86MonBrightnessDown" = "brightnessctl set 5%-";
 
       # Terminal
       "super + Return" = "alacritty";
