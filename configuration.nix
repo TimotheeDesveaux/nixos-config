@@ -15,6 +15,12 @@
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
+
+    binaryCaches = [
+      "https://s3.cri.epita.fr/cri-nix-cache.s3.cri.epita.fr"
+      "https://nix-community.cachix.org"
+      "https://cache.nixos.org/"
+    ];
   };
 
   # Use the systemd-boot EFI boot loader.

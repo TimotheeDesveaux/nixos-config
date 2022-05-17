@@ -5,6 +5,8 @@
     settings = {
       battery.disabled = true;
 
+      c.disabled = true;
+
       directory = {
         truncation_length = 0;
         read_only = " ";

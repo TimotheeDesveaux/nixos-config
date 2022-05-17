@@ -53,8 +53,11 @@
     bear
     clang-tools
     gcc
+    gdb
     gnumake
+    man-pages
     neovim
+    valgrind
 
     # Formatters and language servers
     nixpkgs-fmt
