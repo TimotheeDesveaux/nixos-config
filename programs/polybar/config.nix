@@ -1,12 +1,6 @@
 colors: fonts:
 {
   settings = {
-    throttle = {
-      output = 5;
-      output-for = 10;
-      input-for = 30;
-    };
-
     screenchange-reload = true;
 
     compositing = {
@@ -40,7 +34,7 @@ colors: fonts:
     background = colors.background;
     foreground = colors.foreground;
 
-    modules-left = "bspwm right space";
+    modules-left = "bspwm right space xkeyboard";
     modules-center = "left previous spotify next right";
     modules-right = "left date right space left pulseaudio right space left redshift right space left brightness right space left battery-one right space left battery-two right space left";
 

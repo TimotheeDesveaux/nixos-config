@@ -97,6 +97,22 @@ pkgs: colors:
     label-private-padding-left = 1;
   };
 
+  "module/xkeyboard" = {
+    type = "internal/xkeyboard";
+
+    label-layout = "%icon%";
+
+    layout-icon-default = "";
+    layout-icon-0 = "us;_;us";
+    layout-icon-1 = "us;intl;us_intl";
+
+    format = {
+      text = "<label-layout>";
+      foreground = colors.fg_dark;
+      background = colors.background;
+    };
+  };
+
   "module/xwindow" = {
     type = "internal/xwindow";
 

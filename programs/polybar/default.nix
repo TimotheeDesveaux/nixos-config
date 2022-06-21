@@ -37,15 +37,11 @@
     {
       enable = true;
       package = pkgs.polybarFull;
-      extraConfig = ''
-        include-file = ~/.config/polybar/fonts.ini
-      '';
       settings = config // modules;
       script = "polybar mainbar &";
     };
 
   home.file = {
-    ".config/polybar/fonts.ini".source = ./fonts.ini;
     ".config/polybar/scripts" = {
       source = ./scripts;
       recursive = true;
