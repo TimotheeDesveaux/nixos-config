@@ -64,7 +64,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.stolen = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "video" "vboxusers" "docker" ];
+    extraGroups = [ "wheel" "networkmanager" "video" "vboxusers" "docker" "dialout" ];
     shell = pkgs.fish;
   };
 
