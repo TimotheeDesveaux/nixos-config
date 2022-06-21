@@ -37,6 +37,8 @@
       rm = "rm -I";
       mv = "mv -i";
       cp = "cp -i";
+
+      cdtemp = "cd (mktemp -d)";
     };
 
     plugins = [{
