@@ -27,6 +27,7 @@
     tree
 
     # Utility
+    arandr
     brightnessctl
     flameshot
     playerctl
@@ -51,6 +52,7 @@
 
     # Dev
     bear
+    binutils
     clang-tools
     gcc
     gdb
