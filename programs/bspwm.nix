@@ -32,6 +32,7 @@
         "discord"
         "thunderbird"
         "flameshot"
+        "slack"
       ];
     };
   };
