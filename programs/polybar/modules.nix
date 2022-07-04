@@ -36,31 +36,21 @@ pkgs: colors:
     reverse-scroll = true;
     pin-workspaces = true;
 
-    ws-icon-0 = "1;";
-    ws-icon-1 = "2;";
-    ws-icon-2 = "3;";
-    ws-icon-3 = "4;";
-    ws-icon-4 = "5;";
-    ws-icon-5 = "6;";
-    ws-icon-6 = "7;";
-    ws-icon-7 = "8;";
-    ws-icon-8 = "9;ﭮ";
-    ws-icon-9 = "10;";
-    ws-icon-default = "";
+    ws-icon-default = "";
 
-    label-focused = "%icon%";
+    label-focused = "";
     label-focused-foreground = colors.foreground;
     label-focused-padding = 1;
 
-    label-empty = "%icon%";
+    label-empty = "";
     label-empty-foreground = colors.background;
     label-empty-padding = 1;
 
-    label-occupied = "%icon%";
+    label-occupied = "";
     label-occupied-foreground = colors.magenta;
     label-occupied-padding = 1;
 
-    label-urgent = "%icon%";
+    label-urgent = "";
     label-urgent-foreground = colors.red;
     label-urgent-padding = 1;
 
