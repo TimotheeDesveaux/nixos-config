@@ -63,6 +63,8 @@
 
     # Formatters and language servers
     nixpkgs-fmt
+    nodePackages.bash-language-server
+    nodePackages.pyright
     rust-analyzer
     rustfmt
     stylua
@@ -70,8 +72,8 @@
     texlab
 
     # Fonts/Theme
-    (nerdfonts.override { fonts = [ "Hack" ]; })
     iosevka
+    (nerdfonts.override { fonts = [ "Hack" ]; })
     noto-fonts-emoji
     papirus-icon-theme
   ];
