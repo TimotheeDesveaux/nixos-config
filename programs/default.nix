@@ -6,6 +6,7 @@
     ./dunst.nix
     ./fish.nix
     ./git.nix
+    ./gpg.nix
     ./picom.nix
     ./polybar
     ./python.nix
