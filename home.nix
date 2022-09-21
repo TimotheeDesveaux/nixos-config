@@ -43,6 +43,7 @@
     discord
     feh
     font-manager
+    gimp
     pavucontrol
     slack
     spotify
