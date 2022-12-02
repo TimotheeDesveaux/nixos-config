@@ -13,14 +13,14 @@
 
       vim = "nvim";
 
-      ccf =
-        "gcc -Wextra -Wall -Werror -std=c99 -pedantic -g -O0 -fno-inline -fsanitize=address -o main";
+      ccf = "gcc -Wextra -Wall -Werror -std=c99 -pedantic -g -fsanitize=address -o main";
       cppf = "g++ -Wextra -Wall -Werror -std=c++17 -pedantic -o main";
       valgrind-full =
         "valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes";
 
       ga = "git add";
       gc = "git commit";
+      gC = "git checkout";
       gd = "git diff";
       gf = "git fetch";
       gl = "git log";
@@ -34,8 +34,11 @@
       nd = "nix develop --command fish";
       ns = "nix-shell --command fish";
 
+      db = "docker build";
       dc = "docker container";
       dC = "docker compose";
+      di = "docker image";
+      dr = "docker run";
 
       bt = "bluetoothctl";
     };

@@ -20,6 +20,7 @@
       perl.symbol = " ";
       ruby.symbol = " ";
       rust.symbol = " ";
+      golang.symbol = "ﳑ ";
 
       git_status = {
         style = "bold blue";

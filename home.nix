@@ -46,6 +46,7 @@
     gimp
     pavucontrol
     slack
+    slrn
     spotify
     teams
     thunderbird
@@ -66,8 +67,6 @@
     nixpkgs-fmt
     nodePackages.bash-language-server
     nodePackages.pyright
-    rust-analyzer
-    rustfmt
     stylua
     sumneko-lua-language-server
     texlab

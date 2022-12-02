@@ -12,7 +12,7 @@
         offset = "5x35";
         indicate_hidden = true;
         shrink = false;
-        transparency = 15;
+        transparency = 0;
         separator_height = 1;
         padding = 8;
         horizontal_padding = 10;

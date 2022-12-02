@@ -16,7 +16,7 @@
       experimental-features = nix-command flakes
     '';
 
-    binaryCaches = [
+    settings.substituters = [
       "https://s3.cri.epita.fr/cri-nix-cache.s3.cri.epita.fr"
       "https://nix-community.cachix.org"
       "https://cache.nixos.org/"
@@ -26,6 +26,7 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "nixos-lenovo-stolen";
   networking.networkmanager.enable = true;
@@ -74,6 +75,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [ vim wget git firefox ];
+
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+  };
 
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.gutenprint ];
