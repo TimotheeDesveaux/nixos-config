@@ -32,6 +32,8 @@
           y = 0;
         };
       };
+
+      shell.program = "${pkgs.fish}/bin/fish";
     };
   };
 }
