@@ -9,6 +9,9 @@
 
     # Launcher
     wofi
+
+    # Utils
+    brightnessctl
   ];
 
   imports = [
