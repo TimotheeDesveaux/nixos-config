@@ -3,24 +3,13 @@
 {
   imports = [
     ./themes
-    ./alacritty.nix
-    ./git.nix
+    ./programs
+    ./shell
   ];
 
   home = {
     username = "stolen";
     homeDirectory = "/home/stolen";
-
-    packages = with pkgs; [
-      firefox
-      wofi
-      spotify
-      tree
-      ripgrep
-      wl-clipboard
-      zip
-      unzip
-    ];
 
     # This value determines the Home Manager release that your
     # configuration is compatible with. This helps avoid breakage
