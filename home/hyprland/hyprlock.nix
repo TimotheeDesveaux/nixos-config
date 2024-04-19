@@ -22,7 +22,7 @@
         inner_color = rgb(${colors.bg_dark})
         font_color = rgb(${colors.fg})
         fade_on_empty = false
-        font_family = Hack Nerd Font Mono
+        font_family = Hack Nerd Font
         placeholder_text = <i><span foreground="##${colors.comment}">Input Password...</span></i>
         check_color = rgb(${colors.yellow})
         fail_color = rgb(${colors.red})
@@ -35,9 +35,9 @@
     label {
         monitor =
         text = cmd[update:1000] echo "$(date +"%H:%M")"
-        color = rgb(${colors.white})
+        color = rgb(${colors.fg})
         font_size = 120
-        font_family = Hack Nerd Font Mono ExtraBold
+        font_family = Hack Nerd Font ExtraBold
         position = 0, -50
         halign = center
         valign = center
