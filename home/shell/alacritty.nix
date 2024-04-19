@@ -51,8 +51,8 @@
         };
 
         selection = {
-            foreground = "CellForeground";
-            background = "#${colors.bg_selection}";
+          foreground = "CellForeground";
+          background = "#${colors.bg_selection}";
         };
       };
 
