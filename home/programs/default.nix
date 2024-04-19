@@ -12,6 +12,7 @@
 
     # Utils
     brightnessctl
+    playerctl
   ];
 
   imports = [
