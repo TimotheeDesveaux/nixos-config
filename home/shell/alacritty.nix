@@ -33,8 +33,6 @@
         };
       };
 
-      shell.program = "${pkgs.fish}/bin/fish";
-
       colors = with config.theme; {
         primary = {
           background = colors.bg;
@@ -57,6 +55,10 @@
             background = colors.bg_selection;
         };
       };
+
+      mouse.hide_when_typing = true;
+
+      shell.program = "${pkgs.fish}/bin/fish";
     };
   };
 }
