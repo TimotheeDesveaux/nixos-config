@@ -34,6 +34,29 @@
       };
 
       shell.program = "${pkgs.fish}/bin/fish";
+
+      colors = with config.theme; {
+        primary = {
+          background = colors.bg;
+          foreground = colors.fg;
+        };
+
+        normal = {
+          black = colors.black;
+          red = colors.red;
+          green = colors.green;
+          yellow = colors.yellow;
+          blue = colors.blue;
+          magenta = colors.magenta;
+          cyan = colors.cyan;
+          white = colors.white;
+        };
+
+        selection = {
+            foreground = "CellForeground";
+            background = colors.bg_selection;
+        };
+      };
     };
   };
 }
