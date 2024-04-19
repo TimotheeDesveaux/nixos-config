@@ -35,24 +35,24 @@
 
       colors = with config.theme; {
         primary = {
-          background = colors.bg;
-          foreground = colors.fg;
+          background = "#${colors.bg}";
+          foreground = "#${colors.fg}";
         };
 
         normal = {
-          black = colors.black;
-          red = colors.red;
-          green = colors.green;
-          yellow = colors.yellow;
-          blue = colors.blue;
-          magenta = colors.magenta;
-          cyan = colors.cyan;
-          white = colors.white;
+          black = "#${colors.black}";
+          red = "#${colors.red}";
+          green = "#${colors.green}";
+          yellow = "#${colors.yellow}";
+          blue = "#${colors.blue}";
+          magenta = "#${colors.magenta}";
+          cyan = "#${colors.cyan}";
+          white = "#${colors.white}";
         };
 
         selection = {
             foreground = "CellForeground";
-            background = colors.bg_selection;
+            background = "#${colors.bg_selection}";
         };
       };
 

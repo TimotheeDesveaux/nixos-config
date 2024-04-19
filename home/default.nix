@@ -3,6 +3,7 @@
 {
   imports = [
     ./themes
+    ./hyprland
     ./programs
     ./shell
   ];
