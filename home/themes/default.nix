@@ -7,6 +7,7 @@
       default = {
         bg = "24283b";
         bg_dark = "1f2335";
+        bg_darker = "1a1b26";
         bg_selection = "2e3c64";
         black = "1d202f";
         blue = "7aa2f7";
