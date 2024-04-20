@@ -24,6 +24,20 @@
     };
   };
 
+  config = {
+    gtk = {
+      enable = true;
+      theme = {
+        package = pkgs.tokyonight-gtk-theme;
+        name = "Tokyonight-Storm-BL";
+      };
+      iconTheme = {
+        package = pkgs.tokyonight-gtk-theme;
+        name = "Tokyonight-Dark";
+      };
+    };
+  };
+
   imports = [
     ./fonts.nix
   ];

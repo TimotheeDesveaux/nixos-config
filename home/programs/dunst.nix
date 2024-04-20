@@ -22,8 +22,6 @@
         # Icons
         min_icon_size = 32;
         max_icon_size = 64;
-        #   icon_path =
-        #     "/home/stolen/.icons/tokyonight/status/22:/home/stolen/.icons/tokyonight/devices/22:/home/stolen/.icons/tokyonight/panel/22";
 
         # Misc/Advanced
         browser = "${pkgs.firefox}/bin/firefox -new-tab";
