@@ -3,6 +3,11 @@
 {
   services.dunst = {
     enable = true;
+    iconTheme = {
+      # Does not work, generated path are invalid for this theme
+      package = config.gtk.iconTheme.package;
+      name = config.gtk.iconTheme.name;
+    };
     settings = with config.theme; {
       global = {
         follow = "mouse";
