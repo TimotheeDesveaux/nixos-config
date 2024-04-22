@@ -7,6 +7,7 @@
     ./hyprland
     ./programs
     ./shell
+    ./dev
   ];
 
   home = {

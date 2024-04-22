@@ -103,6 +103,7 @@
         "home-manager": "home-manager",
         "hyprlock": "hyprlock",
         "nixpkgs": "nixpkgs",
+        "tokyonight-sddm-theme": "tokyonight-sddm-theme",
         "z": "z"
       }
     },
@@ -133,6 +134,23 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default-linux",
+        "type": "github"
+      }
+    },
+    "tokyonight-sddm-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661321743,
+        "narHash": "sha256-flOspjpYezPvGZ6b4R/Mr18N7N3JdytCSwwu6mf4owQ=",
+        "owner": "MarianArlt",
+        "repo": "sddm-sugar-dark",
+        "rev": "ceb2c455663429be03ba62d9f898c571650ef7fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarianArlt",
+        "ref": "master",
+        "repo": "sddm-sugar-dark",
         "type": "github"
       }
     },
