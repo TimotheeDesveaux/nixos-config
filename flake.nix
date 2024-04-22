@@ -5,6 +5,16 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    # fish plugins
+    z = {
+      url = "github:jethrokuan/z/master";
+      flake = false;
+    };
+    bass = {
+      url = "github:edc/bass/master";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
@@ -21,6 +31,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.stolen = import ./home;
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
       };

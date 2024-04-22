@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "bass": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1702770652,
+        "narHash": "sha256-3d/qL+hovNA4VMWZ0n1L+dSM1lcz7P5CQJyy+/8exTc=",
+        "owner": "edc",
+        "repo": "bass",
+        "rev": "79b62958ecf4e87334f24d6743e5766475bcf4d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edc",
+        "ref": "master",
+        "repo": "bass",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -38,8 +55,27 @@
     },
     "root": {
       "inputs": {
+        "bass": "bass",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "z": "z"
+      }
+    },
+    "z": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649439817,
+        "narHash": "sha256-+FUBM7CodtZrYKqU542fQD+ZDGrd2438trKM0tIESs0=",
+        "owner": "jethrokuan",
+        "repo": "z",
+        "rev": "85f863f20f24faf675827fb00f3a4e15c7838d76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jethrokuan",
+        "ref": "master",
+        "repo": "z",
+        "type": "github"
       }
     }
   },

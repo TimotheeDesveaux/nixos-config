@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   programs.fish = {
@@ -60,5 +60,10 @@
         set -g fish_pager_color_selected_background --background=${colors.bg_selection}
       '';
     };
+
+    plugins = [
+      { name = "z"; src = inputs.z; }
+      { name = "bass"; src = inputs.bass; }
+    ];
   };
 }
