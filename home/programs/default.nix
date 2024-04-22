@@ -13,6 +13,7 @@
     # Utils
     brightnessctl
     playerctl
+    networkmanagerapplet
   ];
 
   imports = [

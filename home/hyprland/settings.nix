@@ -41,5 +41,12 @@
     binds = {
       workspace_center_on = 1;
     };
+
+    exec-once = [
+      "spotify"
+      "discord"
+      "nm-applet"
+      "waybar"
+    ];
   };
 }
