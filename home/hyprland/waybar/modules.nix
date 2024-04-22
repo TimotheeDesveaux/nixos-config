@@ -20,21 +20,20 @@ colors:
       playing = "";
       paused = "";
     };
+    tooltip = false;
+    on-click-right = "hyprctl dispatch focuswindow title:Spotify";
   };
 
   clock = {
+    interval = 1;
     format = "  {:%H:%M}";
     format-alt = "  {:%d/%m/%Y %H:%M:%S}";
     tooltip-format = "<tt><small>{calendar}</small></tt>";
     calendar = {
       mode = "month";
-      mode-mon-col = 3;
-      weeks-pos = "right";
-      on-scroll = 1;
       format = {
         months = "<span color='#${colors.fg}'><b>{}</b></span>";
         days = "<span color='#${colors.fg}'><b>{}</b></span>";
-        weeks = "";
         weekdays = "<span color='#${colors.yellow}'><b>{}</b></span>";
         today = "<span color='#${colors.red}'><b><u>{}</u></b></span>";
       };
@@ -63,6 +62,7 @@ colors:
 
   battery = {
     format = "{icon}  {capacity}%";
+    format-charging = "{icon} 󱐋 {capacity}%";
     format-icons = [ "" "" "" "" "" ];
   };
 }
