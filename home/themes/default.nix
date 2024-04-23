@@ -19,6 +19,7 @@
         orange = "ff9e64";
         purple = "9d7cd8";
         red = "f7768e";
+        terminal_black = "414868";
         white = "a9b1d6";
         yellow = "e0af68";
       };

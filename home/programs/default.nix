@@ -21,5 +21,6 @@
     ./git.nix
     ./dunst.nix
     ./wofi.nix
+    ./zathura.nix
   ];
 }
