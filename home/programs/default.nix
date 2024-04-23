@@ -6,6 +6,7 @@
     firefox
     spotify
     discord
+    xfce.thunar
 
     # Launcher
     wofi
