@@ -54,7 +54,7 @@
 
       "$mod, Return, exec, alacritty"
       "$mod, D, exec, wofi --show drun"
-      "$mod, X, exec, hyprlock"
+      "$mod, X, exec, wofi-power-menu"
     ];
 
     binde = [
