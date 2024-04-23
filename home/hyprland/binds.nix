@@ -53,7 +53,7 @@
       "$mod ALT, Q, exit"
 
       "$mod, Return, exec, alacritty"
-      "$mod, D, exec, wofi --show drun"
+      "$mod, D, exec, wofi -I --show drun"
       "$mod, X, exec, wofi-power-menu"
     ];
 

@@ -8,7 +8,7 @@ pkgs.writeShellApplication {
   text = ''
     op=$(
     echo -e "⏻  Poweroff\n  Reboot\n  Suspend\n  Lock\n󰈆  Logout" \
-      | wofi -i --dmenu \
+      | wofi --dmenu \
       | tr -s ' ' \
       | tr '[:upper:]' '[:lower:]' \
       | cut -d ' ' -f 2

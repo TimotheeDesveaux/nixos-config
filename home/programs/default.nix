@@ -10,9 +10,6 @@
     xfce.thunar
     imv
 
-    # Launcher
-    wofi
-
     # Utils
     brightnessctl
     playerctl
@@ -23,5 +20,6 @@
   imports = [
     ./git.nix
     ./dunst.nix
+    ./wofi.nix
   ];
 }
