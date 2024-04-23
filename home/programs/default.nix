@@ -6,7 +6,9 @@
     firefox
     spotify
     discord
+    thunderbird
     xfce.thunar
+    imv
 
     # Launcher
     wofi
@@ -14,8 +16,9 @@
     # Utils
     brightnessctl
     playerctl
-    networkmanagerapplet
   ];
+
+  services.network-manager-applet.enable = true;
 
   imports = [
     ./git.nix

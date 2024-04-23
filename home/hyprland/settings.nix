@@ -43,9 +43,9 @@
     };
 
     exec-once = [
-      "spotify"
+      "thunderbird"
       "discord"
-      "nm-applet"
+      "spotify"
       "waybar"
       "hyprpaper"
     ];

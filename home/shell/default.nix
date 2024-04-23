@@ -7,6 +7,7 @@
     ripgrep
     wl-clipboard
     jq
+    file
 
     # Archives
     zip
