@@ -47,7 +47,7 @@
       "discord"
       "spotify"
       "waybar"
-      "hyprpaper"
+      "swaybg -m fill -i ~/wallpaper.jpg"
     ];
   };
 }
