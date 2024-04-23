@@ -47,6 +47,7 @@
       "discord"
       "nm-applet"
       "waybar"
+      "hyprpaper"
     ];
   };
 }
