@@ -1,7 +1,8 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    nil
-  ];
+  nix = import ./nix.nix { inherit pkgs; };
+  cc = import ./cc.nix { inherit pkgs; };
+  lua = import ./lua.nix { inherit pkgs; };
+  rust = import ./rust.nix { inherit pkgs; };
 }

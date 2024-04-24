@@ -33,6 +33,8 @@
     rec {
       formatter.${system} = pkgs.nixpkgs-fmt;
 
+      devShells.${system} = import ./home/dev { inherit pkgs; };
+
       overlays = import ./overlays { inherit inputs; };
 
       nixosConfigurations = {
