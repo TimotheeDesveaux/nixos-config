@@ -67,6 +67,12 @@ colors:
     color: #${colors.green};
   }
 
+  #custom-kblayout {
+    margin: 0;
+    background: none;
+    color: #${colors.fg_dark}
+  }
+
   #clock {
     color: #${colors.red};
   }

@@ -21,7 +21,7 @@
     {
       exec = windowStateScript;
       interval = 1;
-      return-type = "json";
+      tooltip = false;
     };
 
   mpris = {
@@ -33,6 +33,13 @@
     };
     tooltip = false;
     on-click-right = "hyprctl dispatch focuswindow title:Spotify";
+  };
+
+  "custom/kblayout" = {
+    exec =
+      ''[ "$(hyprctl devices | grep 'US, intl')" ] && echo us_intl || echo us'';
+    interval = 1;
+    tooltip = false;
   };
 
   clock = {

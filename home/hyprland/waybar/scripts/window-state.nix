@@ -19,6 +19,6 @@ pkgs.writeShellApplication {
         icon=""
     fi
 
-    echo "{ \"text\": \"$icon\" }"
+    echo "$icon"
   '';
 }

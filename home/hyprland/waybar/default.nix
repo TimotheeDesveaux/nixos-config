@@ -19,6 +19,7 @@
             "mpris"
           ];
           modules-right = [
+            "custom/kblayout"
             "clock"
             "wireplumber"
             "backlight"
