@@ -5,7 +5,7 @@
     enable = true;
     settings =
       let
-        modules = import ./modules.nix config.theme.colors;
+        modules = import ./modules.nix { inherit config; inherit pkgs; };
       in
       {
         mainBar = {
@@ -13,6 +13,7 @@
 
           modules-left = [
             "hyprland/workspaces"
+            "custom/window-state"
           ];
           modules-center = [
             "mpris"

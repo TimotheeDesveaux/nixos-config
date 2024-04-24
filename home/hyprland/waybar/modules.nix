@@ -1,4 +1,4 @@
-colors:
+{ config, pkgs, ... }:
 
 {
   "hyprland/workspaces" = {
@@ -12,6 +12,17 @@ colors:
       active = "";
     };
   };
+
+  "custom/window-state" =
+    let
+      windowStateScript =
+        pkgs.callPackage ./scripts/window-state.nix { } + "/bin/window-state.sh";
+    in
+    {
+      exec = windowStateScript;
+      interval = 1;
+      return-type = "json";
+    };
 
   mpris = {
     player = "spotify";
@@ -31,7 +42,7 @@ colors:
     tooltip-format = "<tt><small>{calendar}</small></tt>";
     calendar = {
       mode = "month";
-      format = {
+      format = with config.theme; {
         months = "<span color='#${colors.fg}'><b>{}</b></span>";
         days = "<span color='#${colors.fg}'><b>{}</b></span>";
         weekdays = "<span color='#${colors.yellow}'><b>{}</b></span>";

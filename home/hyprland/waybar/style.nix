@@ -57,6 +57,12 @@ colors:
     color: #${colors.fg};
   }
 
+  #custom-window-state {
+    margin: 0;
+    background: none;
+    color: #${colors.white};
+  }
+
   #mpris {
     color: #${colors.green};
   }
