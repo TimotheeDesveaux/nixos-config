@@ -11,9 +11,9 @@
       notification-bg = "#${colors.bg}";
       notification-fg = "#${colors.fg}";
       completion-bg = "#${colors.bg}";
-      completion-fg = "#${colors.white}";
+      completion-fg = "#${colors.fg_dark}";
       completion-group-bg = "#${colors.bg}";
-      completion-group-fg = "#${colors.white}";
+      completion-group-fg = "#${colors.fg_dark}";
       completion-highlight-bg = "#${colors.terminal_black}";
       completion-highlight-fg = "#${colors.fg}";
       index-bg = "#${colors.bg}";

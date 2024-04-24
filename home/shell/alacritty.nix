@@ -47,7 +47,7 @@
           blue = "#${colors.blue}";
           magenta = "#${colors.magenta}";
           cyan = "#${colors.cyan}";
-          white = "#${colors.white}";
+          white = "#${colors.fg_dark}";
         };
 
         selection = {

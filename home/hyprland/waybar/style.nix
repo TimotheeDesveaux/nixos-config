@@ -60,7 +60,7 @@ colors:
   #custom-window-state {
     margin: 0;
     background: none;
-    color: #${colors.white};
+    color: #${colors.fg_dark};
   }
 
   #mpris {
