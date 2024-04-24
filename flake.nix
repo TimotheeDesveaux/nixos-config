@@ -23,11 +23,6 @@
       url = "github:edc/bass/master";
       flake = false;
     };
-
-    tokyonight-sddm-theme = {
-      url = "github:MarianArlt/sddm-sugar-dark/master";
-      flake = false;
-    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }:

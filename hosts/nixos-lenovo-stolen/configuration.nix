@@ -45,11 +45,6 @@
     autoRepeatInterval = 35;
   };
 
-  services.displayManager.sddm = {
-    enable = true;
-    theme = "tokyonight";
-  };
-
   programs.hyprland.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
@@ -89,9 +84,6 @@
     git
     gcc
     gnumake
-
-    libsForQt5.qt5.qtgraphicaleffects
-    tokyonight-sddm-theme
   ];
 
   programs.neovim = {
