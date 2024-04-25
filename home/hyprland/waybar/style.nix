@@ -57,6 +57,10 @@ colors:
     color: #${colors.fg};
   }
 
+  #workspaces button:hover {
+    box-shadow: none;
+  }
+
   #custom-window-state {
     margin: 0;
     background: none;

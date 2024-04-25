@@ -11,6 +11,8 @@
       empty = "";
       active = "";
     };
+    on-scroll-up = "hyprctl dispatch workspace e-1";
+    on-scroll-down = "hyprctl dispatch workspace e+1";
   };
 
   "custom/window-state" =
@@ -32,7 +34,7 @@
       paused = "";
     };
     tooltip = false;
-    on-click-right = "hyprctl dispatch focuswindow title:Spotify";
+    on-click-right = "hyprctl dispatch workspace 10";
   };
 
   "custom/kblayout" = {
@@ -76,6 +78,7 @@
     format = "{icon}  {percent}%";
     format-icons = [ "󰃞" "󰃟" "󰃠" ];
     scroll-step = 5.0;
+    tooltip = false;
   };
 
   battery = {
