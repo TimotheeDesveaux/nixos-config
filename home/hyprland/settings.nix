@@ -2,7 +2,10 @@
 
 {
   wayland.windowManager.hyprland.settings = with config.theme; {
-    monitor = "monitor=,preferred,auto,1";
+    monitor = [
+      "HDMI-A-2,2560x1440@59.95,0x0,1"
+      "eDP-1,1366x768@60,auto-right,1"
+    ];
 
     general = {
       gaps_in = 5;

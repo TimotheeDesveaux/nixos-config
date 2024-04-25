@@ -5,10 +5,7 @@
     enable = true;
     settings =
       let
-        modules = import ./modules.nix { inherit config; inherit pkgs; };
-      in
-      {
-        mainBar = {
+        common = {
           position = "top";
 
           modules-left = [
@@ -26,7 +23,18 @@
             "battery"
             "tray"
           ];
-        } // modules;
+        };
+        modules = import ./modules.nix { inherit config; inherit pkgs; };
+      in
+      {
+        laptop = {
+          name = "laptop";
+          output = "eDP-1";
+        } // common // modules;
+        extern = {
+          name = "extern";
+          output = "HDMI-A-2";
+        } // common // modules;
       };
 
     style = import ./style.nix config.theme.colors;

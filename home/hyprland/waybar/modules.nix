@@ -3,7 +3,8 @@
 {
   "hyprland/workspaces" = {
     persistent-workspaces = {
-      eDP-1 = [ 1 2 3 4 5 6 7 8 9 10 ];
+      eDP-1 = [ 1 3 5 ];
+      HDMI-A-2 = [ 2 4 6 7 8 9 10 ];
     };
     format = "{icon}";
     format-icons = {
