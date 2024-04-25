@@ -34,6 +34,11 @@
       repeat_delay = 225;
     };
 
+    device = {
+      name = "zsa-technology-labs-moonlander-mark-i";
+      kb_options = "grp:win_space_toggle";
+    };
+
     misc = {
       force_default_wallpaper = 0;
     };
