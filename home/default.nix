@@ -1,14 +1,6 @@
 { config, lib, pkgs, inputs, ... }:
 
 {
-  imports = [
-    inputs.hyprlock.homeManagerModules.default
-    ./themes
-    ./hyprland
-    ./programs
-    ./shell
-  ];
-
   home = {
     username = "stolen";
     homeDirectory = "/home/stolen";
@@ -26,4 +18,17 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
+
+  imports = [
+    inputs.hyprlock.homeManagerModules.default
+    ./themes
+    ./hyprland
+    ./programs
+    ./shell
+  ];
 }

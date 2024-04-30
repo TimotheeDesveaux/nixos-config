@@ -55,7 +55,7 @@
       "discord"
       "spotify"
       "waybar"
-      "swaybg -m fill -i ~/wallpaper.jpg"
+      "swaybg -m fill -i ~/Pictures/wallpaper.jpg"
     ];
   };
 }

@@ -5,5 +5,5 @@
     swaybg
   ];
 
-  home.file."wallpaper.jpg".source = ./wallpaper.jpg;
+  home.file."Pictures/wallpaper.jpg".source = ./wallpaper.jpg;
 }
