@@ -25,7 +25,6 @@
   };
 
   imports = [
-    inputs.hyprlock.homeManagerModules.default
     ./themes
     ./hyprland
     ./programs

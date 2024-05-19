@@ -68,7 +68,7 @@
   hardware.bluetooth.enable = true;
 
   # Enable touchpad support
-  services.xserver.libinput.enable = true;
+  services.libinput.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
