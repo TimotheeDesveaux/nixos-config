@@ -15,5 +15,6 @@
     ./rules.nix
     ./waybar
     ./hyprlock.nix
+    ./hypridle.nix
   ];
 }
