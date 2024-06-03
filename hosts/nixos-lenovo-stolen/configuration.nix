@@ -49,7 +49,12 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Enable CUPS to print documents
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [
+      gutenprint
+    ];
+  };
 
   # Enable sound
   security.rtkit.enable = true;
