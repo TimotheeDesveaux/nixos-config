@@ -8,6 +8,7 @@ pkgs.mkShell {
     cmake
     gdb
     clang-tools
+    valgrind
     bear
   ];
 
