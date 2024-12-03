@@ -3,6 +3,7 @@
 {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "Hack" "Iosevka" ]; })
+    nerd-fonts.hack
+    nerd-fonts.iosevka
   ];
 }
