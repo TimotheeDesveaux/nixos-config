@@ -13,15 +13,8 @@ colors:
   #waybar {
     background: #${colors.bg_darker};
     font-family: "IosevkaNerdFont";
-    font-weight: bold;
-  }
-
-  .laptop {
     font-size: 13px;
-  }
-
-  .extern {
-    font-size: 16px;
+    font-weight: bold;
   }
 
   tooltip {

@@ -11,11 +11,11 @@ in
     enable = true;
     theme = {
       package = pkgs.tokyonight-gtk-theme;
-      name = themeNames.${config.theme.name} + "-BL";
+      name = "Adwaita-dark";
     };
     iconTheme = {
       package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark";
+      name = "Adwaita-dark";
     };
   };
 }

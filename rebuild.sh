@@ -16,9 +16,9 @@ sudo nixos-rebuild switch --flake .
 
 current=$(
     nixos-rebuild list-generations --flake .config/nixos \
-        | grep current \
+        | grep True \
         | tr -s ' ' \
-        | cut -d ' ' -f 1,3-6
+        | cut -d ' ' -f 1-5
 )
 
 git commit -am "$current"
