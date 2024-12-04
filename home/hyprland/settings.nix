@@ -22,7 +22,7 @@
 
     decoration = {
       rounding = 3;
-      drop_shadow = false;
+      shadow.enabled = false;
     };
 
     animations = {
