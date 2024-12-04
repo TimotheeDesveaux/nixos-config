@@ -11,7 +11,7 @@ pkgs.writeShellApplication {
     pinned=$(hyprctl -j activewindow | jq '.pinned')
 
     icon=""
-    if [ "$fullscreen" = "true" ]; then
+    if [ "$fullscreen" != "0" ]; then
         icon=""
     elif [ "$pinned" = "true" ]; then
         icon=""
