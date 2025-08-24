@@ -17,13 +17,13 @@
       gc = "git commit";
       gd = "git diff";
       gp = "git push";
-      gP = "git pull";
+      gu = "git pull";
       gl = "git log";
       gL = "git log-graph";
       gr = "git reset";
       gs = "git status";
       gg = "git status -s";
-      gS = "git switch";
+      gw = "git switch";
 
       bt = "bluetoothctl";
     };
