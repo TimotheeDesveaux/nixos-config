@@ -56,7 +56,7 @@
     exec-once = [
       "thunderbird"
       "discord"
-      "spotify"
+      "firefox tidal.com"
       "waybar"
       "swaybg -m fill -i ~/Pictures/wallpaper.jpg"
       "systemctl --user restart hypridle.service"

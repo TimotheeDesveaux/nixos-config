@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     # Apps
     firefox
-    spotify
     discord
     thunderbird
     xfce.thunar

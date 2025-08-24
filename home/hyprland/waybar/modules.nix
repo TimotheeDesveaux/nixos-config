@@ -27,7 +27,7 @@
     };
 
   mpris = {
-    player = "spotify";
+    player = "firefox";
     format = "{status_icon}  {artist} - {title}";
     status-icons = {
       playing = "";
