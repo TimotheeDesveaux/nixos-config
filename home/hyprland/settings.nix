@@ -56,7 +56,7 @@
     exec-once = [
       "thunderbird"
       "discord"
-      "firefox tidal.com"
+      "firefox --new-instance tidal.com"
       "waybar"
       "hyprctl setcursor Adwaita 16"
       "swaybg -m fill -i ~/Pictures/wallpaper.jpg"

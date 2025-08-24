@@ -24,7 +24,7 @@
           placeholder_text = ''<i><span font_family="Hack Nerd Font" foreground="##${colors.comment}">Input Password...</span></i>'';
           check_color = "rgb(${colors.yellow})";
           fail_color = "rgb(${colors.red})";
-          position = "0, -90";
+          position = "0, -70";
           halign = "center";
           valign = "center";
         }
@@ -37,7 +37,7 @@
           color = "rgb(${colors.fg})";
           font_size = 120;
           font_family = "Hack Nerd Font ExtraBold";
-          position = "0, -50";
+          position = "0, 70";
           halign = "center";
           valign = "center";
         }
