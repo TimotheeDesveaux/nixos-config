@@ -58,6 +58,7 @@
       "discord"
       "firefox tidal.com"
       "waybar"
+      "hyprctl setcursor Adwaita 16"
       "swaybg -m fill -i ~/Pictures/wallpaper.jpg"
       "systemctl --user restart hypridle.service"
     ];
