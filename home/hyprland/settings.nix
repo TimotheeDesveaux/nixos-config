@@ -32,6 +32,7 @@
       kb_options = "grp:win_space_toggle,caps:swapescape";
       repeat_rate = 35;
       repeat_delay = 225;
+      touchpad.natural_scroll = true;
     };
 
     device = [
