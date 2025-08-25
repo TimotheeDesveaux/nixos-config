@@ -27,7 +27,7 @@
     };
 
   mpris = {
-    player = "firefox";
+    player = "chromium"; # tidal-hifi
     format = "{status_icon}  {artist} - {title}";
     status-icons = {
       playing = "";
