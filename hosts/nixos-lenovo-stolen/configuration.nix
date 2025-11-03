@@ -94,7 +94,7 @@
 
   services.avahi = {
     enable = true;
-    nssmdns = true;
+    nssmdns4 = true;
   };
 
   # This option defines the first version of NixOS you have installed on this particular machine,
