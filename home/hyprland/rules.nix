@@ -3,9 +3,27 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
-      "workspace 8, title:(.*Thunderbird.*)"
-      "workspace 9, title:(Discord)"
-      "workspace 10, fullscreen 0, title:(.*tidal.*)"
+      {
+        name = "mail";
+        match = {
+          title = "(.*Thunderbird.*)";
+        };
+        workspace = 8;
+      }
+      {
+        name = "discord";
+        match = {
+          title = "(Discord)";
+        };
+        workspace = 9;
+      }
+      {
+        name = "music";
+        match = {
+          title = "(.*tidal.*)";
+        };
+        workspace = 10;
+      }
     ];
   };
 }

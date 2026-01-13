@@ -1,15 +1,19 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   gtk = {
     enable = true;
     theme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark";
+      package = pkgs.kdePackages.breeze-gtk;
+      name = "Breeze-Dark";
     };
-    iconTheme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark";
-    };
+  };
+
+  catppuccin.enable = true;
+  catppuccin.autoEnable = false;
+  catppuccin.flavor = "macchiato";
+
+  catppuccin.gtk.icon = {
+    enable = true;
   };
 }

@@ -8,6 +8,8 @@
     wl-clipboard
     jq
     file
+    fzf
+    tree-sitter
 
     # Archives
     zip

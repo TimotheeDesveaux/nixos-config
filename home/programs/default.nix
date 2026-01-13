@@ -7,8 +7,9 @@
     tidal-hifi
     discord
     thunderbird
-    xfce.thunar
+    thunar
     imv
+    teams-for-linux
 
     # Utils
     brightnessctl
