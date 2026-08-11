@@ -50,6 +50,7 @@ in
   imports = [
     ./fonts.nix
     ./wallpaper.nix
+    ./catppuccin.nix
     ./gtk.nix
   ];
 }

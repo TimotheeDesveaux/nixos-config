@@ -1,19 +1,12 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   gtk = {
     enable = true;
+    colorScheme = "dark";
     theme = {
       package = pkgs.kdePackages.breeze-gtk;
       name = "Breeze-Dark";
     };
-  };
-
-  catppuccin.enable = true;
-  catppuccin.autoEnable = false;
-  catppuccin.flavor = "macchiato";
-
-  catppuccin.gtk.icon = {
-    enable = true;
   };
 }

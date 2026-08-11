@@ -25,6 +25,11 @@
       gg = "git status -s";
       gw = "git switch";
 
+      c = "cargo";
+      ca = "cargo add";
+      cb = "cargo build";
+      cr = "cargo run";
+
       bt = "bluetoothctl";
     };
 
